@@ -1,2 +1,2 @@
-# site-daniel-aldano
- Site feito para o cliente Daniel Aldano.
+# site-daniel
+ Site feito para o cliente Daniel
