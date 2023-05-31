@@ -18,6 +18,7 @@ header{
     text-transform: uppercase;
     text-align: center;
     padding: 50px;
+
 }
 
 header nav{
@@ -47,15 +48,21 @@ header a:hover{
 /* ============ BODY ============= */
 
 body{
-    background-color: var(--fundo);
+    /* background-color: var(--fundo); */
+    background-image: url("../imagens/fundo1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
     font-family: 'Josefin Sans', sans-serif;;
     color: white;
+    
+    
 }
 
 /* ============ MAIN ============= */
 
 main{
-    background-color: var(--fundo);
+    
     margin: auto;
 }
 
@@ -73,8 +80,14 @@ img{
 
 .container-img{
     display: inline-block;
+    
 }
 
 /* ============ FOOTER ============= */
 
-footer{}
+footer{
+    text-align: center;
+    font-size: 13px;
+    font-weight: 200;
+    margin: 50px;
+}
