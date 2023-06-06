@@ -16,9 +16,9 @@
 header{
     font-weight: 200;
     text-transform: uppercase;
-    text-align: center;
     padding: 50px;
-
+    display: block;
+    align-items: center;
 }
 
 header nav{
@@ -27,32 +27,72 @@ header nav{
 
 header h1{
     padding: 30px;
-    font-size: 35px;
-    letter-spacing: 8px;
+    font-size: 30px;
+    letter-spacing: 6px;
     font-weight: 400;
+    text-align: center;
 }
 
-header span{
-    padding-right: 25px;
+
+
+/* ============ MENU ============= */
+
+.menu-toggle{
+    width: 40px;
+    height: 40px;
+    background-color: var(--fundo);
+    cursor: pointer;
 }
 
-header a{
+.menu-toggle:before, .menu-toggle:after{
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    width: 30px;
+    height: 3px;
+    transition: transform 0.3s;
+}
+
+.menu-toggle:before {
+    transform: translateY(10px);
+  }
+  
+  .menu-toggle:after {
+    transform: translateY(30px);
+  }
+  
+  .menu {
+    display: none;
+  }
+  
+  .menu.open {
+    display: block;
+  }
+  
+  .menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu li {
+    padding: 10px 0;
+  }
+  
+  .menu a {
+    color: #fff;
     text-decoration: none;
-    color: white; 
-}
-
-header a:hover{
-    font-weight: 400;
-}
+  }
 
 /* ============ BODY ============= */
 
 body{
     /* background-color: var(--fundo); */
-    background-image: url("../imagens/fundo1.jpg");
+    background-image: url("../imagens/fundo-cortado3.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: right;
+    background-attachment: fixed;
+    background-position: left;
     font-family: 'Josefin Sans', sans-serif;;
     color: white;
     
