@@ -1,0 +1,7 @@
+/* Versão para computador */
+
+@media screen and (min-width: 992px){
+    img{
+        width: 310px;
+    }
+}

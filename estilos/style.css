@@ -87,12 +87,12 @@ header h1{
 /* ============ BODY ============= */
 
 body{
-    /* background-color: var(--fundo); */
-    background-image: url("../imagens/fundo-cortado3.jpg");
+    background-color: var(--fundo);
+    background-image: url("../imagens/mandalas/fundo-pb-transparente.png");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 200%;
     background-attachment: fixed;
-    background-position: left;
+    background-position: left 15%;
     font-family: 'Josefin Sans', sans-serif;;
     color: white;
     
@@ -109,7 +109,8 @@ main{
 img{
     box-shadow: 2px 2px 5px #0000009a;
     display: inline-block;
-    margin:10px;
+    margin:5px;
+    width: 400px;
 } 
 
 .linha-img{
