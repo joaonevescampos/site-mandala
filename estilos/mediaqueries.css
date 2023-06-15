@@ -1,0 +1,37 @@
+
+
+/* Versão para tablet */
+
+@media screen and (min-width:768px) and (max-width: 992px) {
+
+    header h1{
+        font-size: 30px;
+    }
+    img{
+        width: 230px;
+    }
+}
+
+/* Versão para computador */
+
+@media screen and (min-width: 992px){
+
+    header h1{
+        font-size: 30px;
+    }
+    img{
+        width: 310px;
+    }
+}
+
+/* Versão para TV */
+
+@media screen and (min-width: 1400px){
+
+    header h1{
+        font-size: 40px;
+    }
+    img{
+        width: 490px;
+    }
+}
