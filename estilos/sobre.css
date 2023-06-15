@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Josefin+Sans:wght@200;400;600;700&family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Josefin+Sans:wght@200;300;400;600;700&family=Poppins:wght@400;700&display=swap');
 
 :root{
     --fundo: #1f1f1f
@@ -54,34 +54,34 @@ header h1{
 
 .menu-toggle:before {
     transform: translateY(10px);
-  }
-  
-  .menu-toggle:after {
+}
+
+.menu-toggle:after {
     transform: translateY(30px);
-  }
-  
-  .menu {
+}
+
+.menu {
     display: none;
-  }
-  
-  .menu.open {
-    display: block;
-  }
-  
-  .menu ul {
+}
+
+.menu.open {
+display: block;
+}
+
+.menu ul {
     list-style: none;
     margin: 0;
     padding: 0;
-  }
-  
-  .menu li {
+}
+
+.menu li {
     padding: 10px 0;
-  }
-  
-  .menu a {
+}
+
+.menu a {
     color: #fff;
     text-decoration: none;
-  }
+}
 
 /* ============ BODY ============= */
 
@@ -91,43 +91,86 @@ body{
     background-repeat: no-repeat;
     background-size: 200%;
     background-attachment: fixed;
-    background-position: left 15%;
+    background-position: right 15%;
     font-family: 'Josefin Sans', sans-serif;;
     color: white;
-    
-    
 }
 
 /* ============ MAIN ============= */
 
 main{
     
-    margin: auto;
+}
+#container-foto-perfil{
+    position: relative;
+    width: 100vw;
+    height: 300px;
+    margin-bottom: 30px;
 }
 
-img{
-    box-shadow: 2px 2px 5px #0000009a;
-    display: inline-block;
-    margin:5px;
-    width: 365px;
-} 
-
-.linha-img{
-    margin: auto;
-    text-align: center;
-    
+#foto-perfil{
+    width: 290px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-.container-img{
-    display: inline-block;
+.descricao{
+    margin: 40px;
+    font-weight: 300;
+    line-height: 20px;
+    text-align: justify;
     
+
 }
 
 /* ============ FOOTER ============= */
 
 footer{
     text-align: center;
-    font-size: 14px;
-    font-weight: 300;
+    font-size: 13px;
+    font-weight: 200;
     margin: 50px;
+}
+
+@media screen and (min-width: 768px) {
+
+    #container-foto-perfil{
+        width: 50vw;
+        height: 500px;
+      
+        display: inline-block;
+    }
+    
+    #foto-perfil{
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        width: 350px;
+    }
+    
+    .container-descricao{
+        position: relative;
+        display: inline-block;
+    }
+    .descricao{
+        position: absolute;
+        top: -510px;
+        margin: auto;
+        font-weight: 300;
+        width: 43vw;
+        max-width: 500px ;
+    }
+
+}
+
+@media screen and (min-width: 992px){
+    #foto-perfil{
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        width: 450px;
+    }
+
 }

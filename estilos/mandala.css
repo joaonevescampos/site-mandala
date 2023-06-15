@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Josefin+Sans:wght@200;400;600;700&family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Josefin+Sans:wght@200;300;400;600;700&family=Poppins:wght@400;700&display=swap');
 
 :root{
     --fundo: #1f1f1f
@@ -54,34 +54,34 @@ header h1{
 
 .menu-toggle:before {
     transform: translateY(10px);
-  }
-  
-  .menu-toggle:after {
+}
+
+.menu-toggle:after {
     transform: translateY(30px);
-  }
-  
-  .menu {
+}
+
+.menu {
     display: none;
-  }
-  
-  .menu.open {
-    display: block;
-  }
-  
-  .menu ul {
+}
+
+.menu.open {
+display: block;
+}
+
+.menu ul {
     list-style: none;
     margin: 0;
     padding: 0;
-  }
-  
-  .menu li {
+}
+
+.menu li {
     padding: 10px 0;
-  }
-  
-  .menu a {
+}
+
+.menu a {
     color: #fff;
     text-decoration: none;
-  }
+}
 
 /* ============ BODY ============= */
 
@@ -89,45 +89,44 @@ body{
     background-color: var(--fundo);
     background-image: url("../imagens/mandalas/fundo-pb-transparente.png");
     background-repeat: no-repeat;
-    background-size: 200%;
+    background-size: 100%;
     background-attachment: fixed;
-    background-position: left 15%;
+    background-position: center center;
     font-family: 'Josefin Sans', sans-serif;;
     color: white;
-    
     
 }
 
 /* ============ MAIN ============= */
 
-main{
-    
-    margin: auto;
+.container-descricao{
+    margin: 40px;
 }
-
-img{
-    box-shadow: 2px 2px 5px #0000009a;
-    display: inline-block;
-    margin:5px;
-    width: 365px;
-} 
-
-.linha-img{
+.descricao{
     margin: auto;
-    text-align: center;
-    
-}
+    font-weight: 300;
+    line-height: 20px;
+    text-align: justify;
+    max-width: 600px;
 
-.container-img{
-    display: inline-block;
-    
 }
 
 /* ============ FOOTER ============= */
 
 footer{
     text-align: center;
-    font-size: 14px;
-    font-weight: 300;
-    margin: 50px;
+    font-size: 13px;
+    font-weight: 200;
+    margin: 40px;
+    padding-top: 100px;
+}
+
+@media screen and (min-width: 768px) {
+
+    
+
+}
+
+@media screen and (min-width: 992px){
+    
 }
