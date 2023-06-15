@@ -39,7 +39,6 @@ header h1{
 .menu-toggle{
     width: 40px;
     height: 40px;
-    background-color: var(--fundo);
     cursor: pointer;
 }
 
@@ -83,11 +82,15 @@ header h1{
     text-decoration: none;
   }
 
+  .menu a:hover{
+    font-weight: 400;
+  }
+
 /* ============ BODY ============= */
 
 body{
     background-color: var(--fundo);
-    background-image: url("../imagens/mandalas/fundo-pb-transparente.png");
+    background-image: url("../imagens/mandalas/fundo1.png");
     background-repeat: no-repeat;
     background-size: 200%;
     background-attachment: fixed;
