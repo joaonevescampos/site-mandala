@@ -34,6 +34,26 @@ header h1{
     line-height: 40px;
 }
 
+/* ============ IDIOMA ============= */
+
+.container-idioma{
+  position: relative;
+}
+form{
+  position: absolute;
+  left: 85%;
+}
+
+#iidioma{
+  background-color: #1f1f1f;
+  color: #fff;
+  font-family: 'Josefin Sans', sans-serif;
+  padding: 5px;
+  border: solid 1px#5c5c5c;
+  font-weight: 300;
+}
+
+
 /* ============ MENU ============= */
 
 .menu-toggle{
@@ -95,7 +115,7 @@ body{
     background-size: 200%;
     background-attachment: fixed;
     background-position: left 15%;
-    font-family: 'Josefin Sans', sans-serif;;
+    font-family: 'Josefin Sans', sans-serif;
     color: white;
     
     

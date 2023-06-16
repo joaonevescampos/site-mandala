@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt" id="html">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,12 +12,20 @@
 </head>
 <body>
     <header>
+        <div class="container-idioma">
+            <form onchange="mudarIdioma(this)">
+                <select name="idioma" id="iidioma">
+                    <option value="pt" selected>Portuguese</option>
+                    <option value="en">English</option>
+                </select>
+            </form>
+        </div>
         <div class="menu-toggle"></div>
         <nav class="menu">
            <ul>
             <li><a href="paginas/mandala.html">Mandala</a></li>
-            <li><a href="paginas/sobre.html">Sobre</a></li>
-            <li><a href="https://linktr.ee/Architect3D" target="_blank">Contato</a></li>
+            <li><a href="paginas/sobre.html" id="menu-sobre" data-traducao="menu-sobre">Sobre</a></li>
+            <li><a href="https://linktr.ee/Architect3D" target="_blank" id="menu-contato" data-traducao="menu-contato">Contato</a></li>
             
            </ul>
         </nav>
@@ -55,8 +63,9 @@
         </section>
     </main>
     <footer>
-        <p>Copyright &copy 2023 - Daniel Aldano - Todos os direitos reservados</p>
+        <p id="rodape" data-traducao="rodape">Copyright &copy 2023 - Daniel Aldano - Todos os direitos reservados</p>
     </footer>
     <script src="javascript/script.js"></script>
+
 </body>
 </html>

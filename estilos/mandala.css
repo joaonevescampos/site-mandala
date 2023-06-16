@@ -100,12 +100,31 @@ body{
     
 }
 
+/* ============ IDIOMA ============= */
+
+.container-idioma{
+    position: relative;
+  }
+  form{
+    position: absolute;
+    left: 85%;
+  }
+  
+  #iidioma{
+    background-color: #1f1f1f;
+    color: #fff;
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 5px;
+    border: solid 1px#5c5c5c;
+    font-weight: 300;
+  }
+
 /* ============ MAIN ============= */
 
 .container-descricao{
     margin: 40px;
 }
-.descricao{
+#descricao-mandala{
     margin: auto;
     font-weight: 300;
     line-height: 20px;
@@ -124,12 +143,3 @@ footer{
     padding-top: 100px;
 }
 
-@media screen and (min-width: 768px) {
-
-    
-
-}
-
-@media screen and (min-width: 992px){
-    
-}
