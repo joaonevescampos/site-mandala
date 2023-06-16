@@ -39,9 +39,10 @@ header h1{
 .container-idioma{
   position: relative;
 }
+
 form{
   position: absolute;
-  left: 85%;
+  left: 80%;
 }
 
 #iidioma{

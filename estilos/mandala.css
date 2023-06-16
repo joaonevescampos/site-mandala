@@ -107,7 +107,7 @@ body{
   }
   form{
     position: absolute;
-    left: 85%;
+    left: 80%;
   }
   
   #iidioma{
@@ -142,4 +142,18 @@ footer{
     margin: 40px;
     padding-top: 100px;
 }
+
+@media screen and (min-width: 768px) and (max-width: 1200px){
+    form{
+        left: 85%;
+      }
+}
+
+@media screen and (min-width: 1200px){
+    form{
+        left: 90%;
+      }
+}
+
+
 

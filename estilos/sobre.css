@@ -55,7 +55,7 @@ header h1{
   }
   form{
     position: absolute;
-    left: 85%;
+    left: 80%;
   }
   
   #iidioma{
@@ -157,7 +157,7 @@ footer{
     margin: 50px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
 
     #container-foto-perfil{
         width: 50vw;
@@ -185,15 +185,15 @@ footer{
         width: 43vw;
         max-width: 500px ;
     }
+    form{
+        left: 85%;
+      }
 
 }
 
-@media screen and (min-width: 992px){
-    #foto-perfil{
-        position: absolute;
-        top: 40%;
-        left: 50%;
-        width: 450px;
-    }
-
+@media screen and (min-width: 1200px){
+    form{
+        left: 90%;
+      }
 }
+

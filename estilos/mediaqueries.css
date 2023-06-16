@@ -10,6 +10,12 @@
     img{
         width: 230px;
     }
+    form{
+        position: absolute;
+        left: 85%;
+      }
+
+
 }
 
 /* Versão para computador */
@@ -22,6 +28,10 @@
     img{
         width: 310px;
     }
+    form{
+        position: absolute;
+        left: 85%;
+      }
 }
 
 /* Versão para TV */
@@ -34,4 +44,8 @@
     img{
         width: 490px;
     }
+    form{
+        position: absolute;
+        left: 90%;
+      }
 }
