@@ -162,7 +162,6 @@ footer{
     #container-foto-perfil{
         width: 50vw;
         height: 500px;
-      
         display: inline-block;
     }
     
@@ -192,6 +191,33 @@ footer{
 }
 
 @media screen and (min-width: 1200px){
+
+    #container-foto-perfil{
+        width: 50vw;
+        height: 500px;
+        display: inline-block;
+    }
+    
+    #foto-perfil{
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        width: 350px;
+    }
+    
+    .container-descricao{
+        position: relative;
+        display: inline-block;
+    }
+    #descricao-sobre{
+        position: absolute;
+        top: -510px;
+        margin: auto;
+        font-weight: 300;
+        width: 43vw;
+        max-width: 500px ;
+    }
+    
     form{
         left: 90%;
       }
