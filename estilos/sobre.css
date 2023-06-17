@@ -202,7 +202,7 @@ footer{
         position: absolute;
         top: 40%;
         left: 50%;
-        width: 350px;
+        width: 400px;
     }
     
     .container-descricao{
@@ -217,7 +217,7 @@ footer{
         width: 43vw;
         max-width: 500px ;
     }
-    
+
     form{
         left: 90%;
       }
