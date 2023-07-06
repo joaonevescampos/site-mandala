@@ -44,8 +44,7 @@ form{
     font-size: 14px;
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 300;
-    padding: 5px;
-    margin: 10px;
+    margin: 5px;
 }
 
 
@@ -59,7 +58,7 @@ form{
 
 .image-container .overlay .button {
     padding: 5px 10px;
-    margin-right: 5px;
+    
 
 }
 
@@ -70,6 +69,10 @@ form{
 
 @media screen and (min-width: 992px) and (max-width: 1600px) {
 
+header{
+    padding: 40px;
+}
+
 header h1{
     font-size: 30px;
 }
@@ -79,7 +82,7 @@ img{
 }
 form{
     position: absolute;
-    left: 85%;
+    left: 90%;
 }
 
 .image-container {
@@ -112,8 +115,7 @@ form{
     font-size: 16px;
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 300;
-    padding: 10px;
-    margin: 20px;
+    margin: 10px;
 }
 
 
@@ -123,7 +125,6 @@ form{
 
 .image-container .overlay .button {
     padding: 10px 20px;
-    margin-right: 10px;
 
 }
     
