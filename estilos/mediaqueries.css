@@ -68,7 +68,7 @@ form{
 
 /* Versão para computador */
 
-@media screen and (min-width: 992px) and (max-width: 1400px) {
+@media screen and (min-width: 992px) and (max-width: 1600px) {
 
 header h1{
     font-size: 30px;
@@ -131,13 +131,29 @@ form{
 
 /* Versão para TV */
 
-@media screen and (min-width: 1400px){
+@media screen and (min-width: 1600px){
 
+    *{
+        font-size: 24px ;
+    }
+  
     header h1{
         font-size: 40px;
     }
+
+    p{
+        font-size: 24px;
+        margin: 20px;
+    }
+
+    .overlay h1{
+        font-size: 30px;
+    }
+
+
     img{
         width: 490px;
+    
     }
     form{
         position: absolute;
@@ -146,7 +162,7 @@ form{
 
       .image-container {
         display: inline-block;
-        width: 400px; 
+        width: 490px; 
     }
     
     .vitrine{
@@ -155,17 +171,19 @@ form{
     
     .linha{
         margin: auto;
-        width: 1300px;
+        width: 1521px;
     }
+
+   
     
     .image-container img {
         display: inline-block;
-        height: 400px; 
+        height: 490px; 
     }
     
     .image-container .overlay {
-        width: 400px;
-        height: 400px;
+        width: 490px;
+        height: 490px;
     
     }
 }
