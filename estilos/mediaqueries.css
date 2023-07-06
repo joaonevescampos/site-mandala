@@ -4,34 +4,129 @@
 
 @media screen and (min-width:768px) and (max-width: 992px) {
 
-    header h1{
-        font-size: 30px;
+header h1{
+    font-size: 30px;
+}
+img{
+    width: 230px;
+}
+form{
+    position: absolute;
+    left: 85%;
     }
-    img{
-        width: 230px;
-    }
-    form{
-        position: absolute;
-        left: 85%;
-      }
+
+.image-container {
+    display: inline-block;
+    width: 100vw;
+    width: 230px; 
+  }
+
+.vitrine{
+    margin: auto; 
+}
+
+.linha{
+    margin: auto;
+    width: 731px;
+}
+  
+.image-container img {
+    display: inline-block;
+    height: 230px; 
+  }
+  
+  .image-container .overlay {
+    width: 230px;
+    height: 230px;
+  }
+
+.image-container .overlay .text {
+    font-size: 14px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    padding: 5px;
+    margin: 10px;
+}
+
+
+.overlay h1{
+    font-size: 16px;
+}
+
+.overlay p{
+    margin: 5px;
+}
+
+.image-container .overlay .button {
+    padding: 5px 10px;
+    margin-right: 5px;
+
+}
 
 
 }
 
 /* Versão para computador */
 
-@media screen and (min-width: 992px){
+@media screen and (min-width: 992px) and (max-width: 1400px) {
 
-    header h1{
-        font-size: 30px;
-    }
-    img{
-        width: 310px;
-    }
-    form{
-        position: absolute;
-        left: 85%;
-      }
+header h1{
+    font-size: 30px;
+}
+img{
+    width: 300px;
+    height: 300px;
+}
+form{
+    position: absolute;
+    left: 85%;
+}
+
+.image-container {
+    display: inline-block;
+
+    width: 300px; 
+}
+
+.vitrine{
+    margin: auto; 
+}
+
+.linha{
+    margin: auto;
+    width: 941px;
+}
+
+.image-container img {
+    display: inline-block;
+    height: 300px; 
+}
+
+.image-container .overlay {
+    width: 300px;
+    height: 300px;
+
+}
+
+.image-container .overlay .text {
+    font-size: 16px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    padding: 10px;
+    margin: 20px;
+}
+
+
+.overlay p{
+    margin: 10px;
+}
+
+.image-container .overlay .button {
+    padding: 10px 20px;
+    margin-right: 10px;
+
+}
+    
 }
 
 /* Versão para TV */
@@ -48,4 +143,29 @@
         position: absolute;
         left: 90%;
       }
+
+      .image-container {
+        display: inline-block;
+        width: 400px; 
+    }
+    
+    .vitrine{
+        margin: auto; 
+    }
+    
+    .linha{
+        margin: auto;
+        width: 1300px;
+    }
+    
+    .image-container img {
+        display: inline-block;
+        height: 400px; 
+    }
+    
+    .image-container .overlay {
+        width: 400px;
+        height: 400px;
+    
+    }
 }

@@ -132,20 +132,117 @@ main{
 img{
     box-shadow: 2px 2px 5px #0000009a;
     display: inline-block;
-    margin:5px;
-    width: 365px;
+   
+    width: 300px;
 } 
 
-.linha-img{
-    margin: auto;
-    text-align: center;
-    
+
+/* .imagem-ampliada {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.493);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  transition: 1s;
 }
 
-.container-img{
-    display: inline-block;
-    
+.entrar-imagem{
+  transition: 1s ease;
 }
+
+.imagem-escura {
+  position: relative;
+  display: inline-block;
+}
+
+.imagem-escura:hover::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0);
+  opacity: 0.3; 
+  margin: 0;
+  padding: 0;
+  
+} */
+
+/* TESTE */
+.image-container {
+  position: relative;
+  width: 300px;
+  margin: auto;
+  padding: 5px;
+  
+}
+
+.image-container img {
+  display: block;
+  height: auto;
+  margin: auto;
+}
+
+.image-container .overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300px;
+  height: 300px;
+  background-color: rgba(0, 0, 0, 0.582);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  margin: auto;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+
+
+}
+
+.image-container:hover .overlay {
+  opacity: 1;
+}
+
+.image-container .overlay .text {
+  font-size: 16px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+  padding: 10px;
+  margin: 20px;
+}
+
+.overlay p{
+  margin: 10px;
+}
+
+.image-container .overlay .button {
+  padding: 10px 20px;
+  margin-right: 10px;
+  background-color: rgba(0, 0, 0, 0.555);
+  color: #fff;
+  border: solid 1px #464646;
+  cursor: pointer;
+ 
+}
+
+.image-container .overlay .button:hover {
+ background-color: #464646;
+ transition: 1s ease;
+}
+
+
 
 /* ============ FOOTER ============= */
 

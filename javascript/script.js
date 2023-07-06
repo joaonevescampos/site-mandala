@@ -55,4 +55,3 @@ traduzirElementos(idiomaSelecionado);
 // Armazenar preferência de idioma em um cookie com validade de 30 dias
 document.cookie = `idioma=${idiomaSelecionado}; expires=${new Date(Date.now() + 30 * 24 * 60 * 60 * 1000).toUTCString()}`;
 }
-  
