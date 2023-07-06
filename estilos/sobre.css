@@ -30,17 +30,17 @@ body{
 header{
     font-weight: 200;
     text-transform: uppercase;
-    padding: 50px;
+    padding: 20px;
     display: block;
-    align-items: center;
+    align-items: center;   
 }
 
 header nav{
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 header h1{
-    padding: 30px;
+    padding: 10px;
     font-size: 25px;
     letter-spacing: 6px;
     font-weight: 400;
@@ -53,9 +53,10 @@ header h1{
 .container-idioma{
     position: relative;
   }
+  
   form{
     position: absolute;
-    left: 80%;
+    left: 73%;
   }
   
   #iidioma{
@@ -66,58 +67,60 @@ header h1{
     border: solid 1px#5c5c5c;
     font-weight: 300;
   }
-
-/* ============ MENU ============= */
-
-.menu-toggle{
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
-}
-
-.menu-toggle:before, .menu-toggle:after{
-    content: "";
-    position: absolute;
-    background-color: #fff;
-    width: 30px;
-    height: 3px;
-    transition: transform 0.3s;
-}
-
-.menu-toggle:before {
-    transform: translateY(10px);
-}
-
-.menu-toggle:after {
-    transform: translateY(30px);
-}
-
-.menu {
-    display: none;
-}
-
-.menu.open {
-display: block;
-}
-
-.menu ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.menu li {
-    padding: 10px 0;
-}
-
-.menu a {
-    color: #fff;
-    text-decoration: none;
-}
-
-.menu a:hover{
-    font-weight: 400;
+  
+  
+  /* ============ MENU ============= */
+  
+  .menu-toggle{
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
   }
+  
+  .menu-toggle:before, .menu-toggle:after{
+      content: "";
+      position: absolute;
+      background-color: #fff;
+      width: 30px;
+      height: 3px;
+      transition: 1s;
+  }
+  
+  .menu-toggle:before {
+      transform: translateY(10px);
+    }
+    
+    .menu-toggle:after {
+      transform: translateY(25px);
+    }
+    
+    .menu {
+      display: none;
+    }
+    
+    .menu.open {
+      display: block;
+    }
+    
+    .menu ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .menu li {
+      padding: 10px 0;
+    }
+    
+    .menu a {
+      color: #fff;
+      text-decoration: none;
+    }
+  
+    .menu a:hover{
+      font-weight: 400;
+    }
+  
 
 /* ============ MAIN ============= */
 
@@ -126,7 +129,7 @@ main{
 }
 #container-foto-perfil{
     position: relative;
-    width: 100vw;
+    width: 90vw;
     height: 300px;
     margin-bottom: 30px;
 }
@@ -191,6 +194,9 @@ footer{
 }
 
 @media screen and (min-width: 1200px){
+    header{
+        padding: 40px;
+    }
 
     #container-foto-perfil{
         width: 50vw;
