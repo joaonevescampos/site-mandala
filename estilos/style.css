@@ -19,6 +19,7 @@ header{
     padding: 20px;
     display: block;
     align-items: center;
+    line-height: 40px;
 }
 
 header nav{
@@ -41,7 +42,7 @@ header h1{
 
 form{
   position: absolute;
-  left: 80%;
+  left: 73%;
 }
 
 #iidioma{
@@ -117,6 +118,7 @@ body{
     background-position: left 15%;
     font-family: 'Josefin Sans', sans-serif;
     color: white;
+
     
     
 }
@@ -124,14 +126,12 @@ body{
 /* ============ MAIN ============= */
 
 main{
-    
     margin: auto;
 }
 
 img{
     box-shadow: 2px 2px 5px #0000009a;
     display: inline-block;
-   
     width: 300px;
 } 
 
@@ -179,6 +179,7 @@ img{
   width: 300px;
   margin: auto;
   padding: 5px;
+
   
 }
 
