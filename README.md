@@ -16,7 +16,7 @@
  __Minhas redes sociais:__
 
  
- * __Meu Portifólio:__ https://joaonevescampos.github.io/meu-portifolio/index.html/
+ * __Meu Portifólio:__ https://joaonevescampos.github.io/meu-portifolio/index.html
  * __Linkedin:__ https://www.linkedin.com/in/jo%C3%A3o-victor-neves-campos-de-jesus-415946180/
  * __Gmail:__ joaon.c.jv@gmail.com
 
