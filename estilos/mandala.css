@@ -133,7 +133,22 @@ body{
     line-height: 20px;
     text-align: justify;
     max-width: 600px;
+}
 
+.container-cenas{
+  width: 500px;
+  margin: auto;
+  
+}
+
+.cena{
+  margin: auto;
+  text-align: center;
+  margin: 20px;
+}
+.cena img{
+  width: 300px;
+  text-align: center;
 }
 
 /* ============ FOOTER ============= */
