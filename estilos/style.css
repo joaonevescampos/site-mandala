@@ -113,7 +113,7 @@ form{
 
 body{
     background-color: var(--fundo);
-    background-image: url("../imagens/mandalas/fundo1.png");
+    background-image: url("../imagens/mandalas/fundo-original-opacidade20.jpg");
     background-repeat: no-repeat;
     background-size: 200%;
     background-attachment: fixed;
@@ -237,7 +237,7 @@ img{
   padding: 10px 20px;
   background-color: rgba(0, 0, 0, 0.555);
   color: #fff;
-  border: solid 1px #464646;
+  border: solid 1px #a7a7a7;
   cursor: pointer;
  
 }

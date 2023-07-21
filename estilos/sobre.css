@@ -15,7 +15,7 @@
 
 body{
     background-color: var(--fundo);
-    background-image: url("../imagens/mandalas/fundo1.png");
+    background-image: url("../imagens/mandalas/fundo-original-opacidade20.jpg");
     background-repeat: no-repeat;
     background-size: 200%;
     background-attachment: fixed;
