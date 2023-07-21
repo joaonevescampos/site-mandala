@@ -136,7 +136,6 @@ body{
 }
 
 .container-cenas{
-  width: 500px;
   margin: auto;
   
 }
@@ -163,9 +162,22 @@ footer{
 
 @media screen and (min-width: 768px) and (max-width: 1200px){
 
-    form{
-        left: 85%;
-      }
+  form{
+      left: 85%;
+    }
+
+    .container-cenas{
+      width: 600px;
+      display: flex;
+      align-self: center;
+    }
+    
+    .cena{
+      margin: 10px;
+    }
+    .cena img{
+      width: 180px;
+    }
 }
 
 @media screen and (min-width: 1200px){
@@ -177,6 +189,23 @@ footer{
     form{
         left: 90%;
       }
+
+      #descricao-mandala{
+        max-width: 800px;
+    }
+
+    .container-cenas{
+      width: 800px;
+      display: flex;
+      align-self: center;
+    }
+    
+    .cena{
+      margin: 10px;
+    }
+    .cena img{
+      width: 250px;
+    }
 }
 
 
