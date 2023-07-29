@@ -8,7 +8,7 @@
 ![mandala-proj](https://github.com/joaonevescampos/projeto-hockey/assets/126534395/ebd11590-0ef2-413a-8b13-84a1814c81c2)
 
  
- __Confira o projeto:__ https://joaonevescampos.github.io/site-daniel-aldano/
+ __Confira o projeto:__ https://joaonevescampos.github.io/site-mandala/
  
  ---
  ![avatar pixel](https://github.com/joaonevescampos/meu-portifolio/assets/126534395/144870f1-a22b-45c2-84cf-819d2f79d5f1)
