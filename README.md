@@ -1,7 +1,7 @@
 # Projeto-Site-Mandala
  *Bem-vindo ao projeto - "Mandala"!*
  
- Este foi um projeto feito usando as tecnologias __HTML, CSS e JavaScript.__ O site foi desenvolvido como um serviço de freelancer para um cliente arquiteto chamdo Daniel Aldano. O site é completamente responsivo e tem como objetivo divulgar e vender as mandalas digitais.
+ Este foi um projeto feito usando as tecnologias __HTML, CSS e JavaScript.__ O site foi desenvolvido como um serviço de freelancer para um cliente arquiteto chamado Daniel Aldano. O site é completamente responsivo e tem como objetivo divulgar e vender as mandalas digitais.
  
  Confira a preview do visual do projeto:
  
