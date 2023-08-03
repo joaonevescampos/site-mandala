@@ -13,7 +13,7 @@
 <body>
     <header>
         <div class="container-idioma">
-            <form onchange="mudarIdioma(this)">
+            <form id="formulario-idioma" onchange="mudarIdioma(this)">
                 <select name="idioma" id="iidioma">
                     <option value="pt" selected>Portuguese</option>
                     <option value="en">English</option>
@@ -37,6 +37,38 @@
     </header>
 
     <main>
+       <!-- Botão para mostrar o formulário -->
+  <button id="personalizar">Personalizar</button>
+
+  <!-- Formulário sobreposto (inicialmente oculto) -->
+  <div id="formularioSobreposto">
+    <button id="fecharFormulario">x</button>
+    <h1 class="titulo-formulario">Crie sua própria mandala</h1>
+    
+    <form id="meuFormulario">
+         
+      <label for="nome">Nome * :</label>
+      <input type="text" id="nome" name="nome" placeholder="seu nome" required>
+      
+      <label for="email">e-mail * :</label>
+      <input type="email" id="email" name="email" placeholder="seu e-mail">
+
+      <label for="cor1">Cor 1:</label>
+      <input type="color" name="cor1" id="cor1">
+
+      <label for="cor1">Cor 2:</label>
+      <input type="color" name="cor2" id="cor2" value="#ffffff">
+
+
+      <label for="mensagem">Mensagem:</label>
+      <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Descreva como deseja sua mandala"></textarea>
+      
+      <!-- Adicione aqui outros campos do formulário que você deseja -->
+      
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+        
         <section class="vitrine">
                 <div class="linha">
                     <div class="image-container">

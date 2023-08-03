@@ -81,7 +81,7 @@ img{
     width: 300px;
     height: 300px;
 }
-form{
+#formulario-idioma{
     position: absolute;
     left: 90%;
 }
@@ -160,7 +160,7 @@ form{
         width: 490px;
     
     }
-    form{
+    #formulario-idioma{
         position: absolute;
         left: 95%;
       }
