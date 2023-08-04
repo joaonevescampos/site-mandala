@@ -55,6 +55,7 @@ traduzirElementos(idiomaSelecionado);
 // Armazenar preferência de idioma em um cookie com validade de 30 dias
 document.cookie = `idioma=${idiomaSelecionado}; expires=${new Date(Date.now() + 30 * 24 * 60 * 60 * 1000).toUTCString()}`;
 }
+//FORMULÁRIO PERSONALIZAR
 
 // Captura o botão e o formulário sobreposto pelo ID
 const botaoMostrarFormulario = document.getElementById("personalizar");
@@ -107,4 +108,61 @@ function enviarMensagemNoWhatsApp(nome, email, cor1, cor2, descricaoMandala) {
   // Use a API do WhatsApp ou um serviço de terceiros para enviar a mensagem
   // Neste exemplo, usamos a sintaxe "https://wa.me/numero?text=mensagem" para redirecionar para o WhatsApp
   window.location.href = `https://wa.me/${numeroWhatsapp}?text=${encodeURIComponent(mensagem)}`;
+}
+
+//FORMULÁRIO COMPRAR MANDALA
+
+// Captura o botão e o formulário sobreposto pelo ID
+const botaoFormularioComprar = document.querySelectorAll(".button-comprar");
+const formularioContainer = document.getElementById("containerFormularioComprar");
+const botaoFecharFormularioComprar = document.getElementById("fecharFormularioComprar");
+const formularioComprar = document.getElementById("formularioComprar");
+
+// Adiciona um evento de clique ao botão para mostrar o formulário com animação
+botaoFormularioComprar.forEach(function(botaoComprar) {
+    botaoComprar.addEventListener("click", function() {
+        formularioContainer.style.display = "block";
+        setTimeout(function() {
+          formularioContainer.style.opacity = "1";
+        }, 10); // Aguarda 10 milissegundos para iniciar a transição de opacidade
+      });
+
+});
+
+
+// Adiciona um evento de clique ao botão "X" para fechar o formulário com animação
+botaoFecharFormularioComprar.addEventListener("click", function() {
+  formularioContainer.style.opacity = "0";
+  setTimeout(function() {
+    formularioContainer.style.display = "none";
+  }, 300); // Aguarda 300 milissegundos (tempo da transição) para ocultar o formulário
+});
+
+// Adiciona um evento de envio ao formulário para enviar mensagem no WhatsApp
+formularioComprar.addEventListener("submit", function(event) {
+  event.preventDefault(); // Impede o envio padrão do formulário
+  
+  const selecaoMandala = document.querySelector('#selecao-mandala').value;
+  const nomeComprar = document.getElementById("nome-comprar").value;
+  const emailComprar = document.getElementById("email-comprar").value;
+
+  
+  // Adicione aqui o código para obter os valores dos outros campos do formulário, se houverem
+  
+  enviarMensagemNoWhatsApp(nomeComprar, emailComprar, selecaoMandala);
+});
+
+function enviarMensagemNoWhatsApp(nomeComprar, emailComprar, selecaoMandala) {
+  // Substitua o número de telefone com o número para o qual você deseja enviar a mensagem no WhatsApp
+  const numeroWhatsapp1 = "5561982481039";
+  
+  const mensagem1 = `*Nova Solicitação*
+
+  *Opção:* ${selecaoMandala}
+  *Nome:* ${nomeComprar}
+  *E-mail:* ${emailComprar}`;
+  
+  // Use a API do WhatsApp ou um serviço de terceiros para enviar a mensagem
+  // Neste exemplo, usamos a sintaxe "https://wa.me/numero?text=mensagem" para redirecionar para o WhatsApp
+  window.location.href = `https://wa.me/${numeroWhatsapp1}?text=${encodeURIComponent(mensagem1)}`;
 }

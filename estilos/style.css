@@ -124,7 +124,67 @@ body{
     
 }
 
-/* ============ FORMULÁRIO ============= */
+/* ============ FORMULÁRIO COMPRAR ============= */
+
+
+/* Estilo do formulário sobreposto */
+#containerFormularioComprar {
+  width: 300px;
+  
+  display: none;
+  font-family: 'Josefin Sans', sans-serif;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #000000b7;
+  color: white;
+  padding: 20px;
+  border: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 9999;
+  /* opacity: 0; */
+  transition: opacity 0.5s ease;
+}
+
+/* Estilo para os campos do formulário */
+#formularioComprar label, #formularioComprar input, #selecao-mandala {
+  display: block;
+  margin-bottom: 10px;
+}
+
+#formularioComprar button {
+  display: block;
+  margin-top: 20px;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  background-color: #0000006b;
+  color: #fff;
+  border: solid 1px white;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+/* Estilo do botão "X" */
+#fecharFormularioComprar {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 16px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: #a1a1a1;
+}
+
+/* Efeito hover para o botão "X" */
+#fecharFormularioComprar:hover {
+  color: white;
+}
+
+
+/* ============ FORMULÁRIO PERSONALIZADO ============= */
 
 .titulo-formulario{
   font-family: 'Josefin Sans', sans-serif;
@@ -311,7 +371,7 @@ img{
 
 }
 
-.image-container .overlay .button {
+.image-container .overlay .button-comprar {
   padding: 10px 20px;
   background-color: rgba(0, 0, 0, 0.555);
   color: #fff;
@@ -320,7 +380,7 @@ img{
  
 }
 
-.image-container .overlay .button:hover {
+.image-container .overlay .button-comprar:hover {
  background-color: #464646;
  transition: 1s ease;
 }
