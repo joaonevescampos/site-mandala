@@ -130,7 +130,6 @@ body{
 /* Estilo do formulário sobreposto */
 #containerFormularioComprar {
   width: 300px;
-  
   display: none;
   font-family: 'Josefin Sans', sans-serif;
   position: fixed;

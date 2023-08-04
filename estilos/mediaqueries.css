@@ -57,10 +57,8 @@ img{
     margin: 5px;
 }
 
-.image-container .overlay .button {
+.image-container .overlay .button-comprar {
     padding: 5px 10px;
-    
-
 }
 
 
@@ -124,7 +122,7 @@ img{
     margin: 10px;
 }
 
-.image-container .overlay .button {
+.image-container .overlay .button-comprar {
     padding: 10px 20px;
 
 }
