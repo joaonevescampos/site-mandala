@@ -113,7 +113,7 @@ header h1{
 
 body{
     background-color: var(--fundo);
-    background-image: url("../imagens/mandalas/fundo-original-opacidade20.jpg");
+    background-image: url("../imagens/mandalas/fundo-alternativo-opacidade20.jpg");
     background-repeat: no-repeat;
     background-size: 200%;
     background-attachment: fixed;
