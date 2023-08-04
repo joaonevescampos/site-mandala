@@ -55,60 +55,6 @@ traduzirElementos(idiomaSelecionado);
 // Armazenar preferência de idioma em um cookie com validade de 30 dias
 document.cookie = `idioma=${idiomaSelecionado}; expires=${new Date(Date.now() + 30 * 24 * 60 * 60 * 1000).toUTCString()}`;
 }
-//FORMULÁRIO PERSONALIZAR
-
-// Captura o botão e o formulário sobreposto pelo ID
-const botaoMostrarFormulario = document.getElementById("personalizar");
-const formularioSobreposto = document.getElementById("formularioSobreposto");
-const botaoFecharFormulario = document.getElementById("fecharFormulario");
-const formulario = document.getElementById("meuFormulario");
-
-// Adiciona um evento de clique ao botão para mostrar o formulário com animação
-botaoMostrarFormulario.addEventListener("click", function() {
-  formularioSobreposto.style.display = "block";
-  setTimeout(function() {
-    formularioSobreposto.style.opacity = "1";
-  }, 10); // Aguarda 10 milissegundos para iniciar a transição de opacidade
-});
-
-// Adiciona um evento de clique ao botão "X" para fechar o formulário com animação
-botaoFecharFormulario.addEventListener("click", function() {
-  formularioSobreposto.style.opacity = "0";
-  setTimeout(function() {
-    formularioSobreposto.style.display = "none";
-  }, 300); // Aguarda 300 milissegundos (tempo da transição) para ocultar o formulário
-});
-
-// Adiciona um evento de envio ao formulário para enviar mensagem no WhatsApp
-formulario.addEventListener("submit", function(event) {
-  event.preventDefault(); // Impede o envio padrão do formulário
-  
-  const nome = document.getElementById("nome").value;
-  const email = document.getElementById("email").value;
-  const cor1 = document.getElementById("cor1").value;
-  const cor2 = document.getElementById("cor2").value;
-  const descricaoMandala = document.getElementById("mensagem").value;
-  // Adicione aqui o código para obter os valores dos outros campos do formulário, se houverem
-  
-  enviarMensagemNoWhatsApp(nome, email, cor1, cor2, descricaoMandala);
-});
-
-function enviarMensagemNoWhatsApp(nome, email, cor1, cor2, descricaoMandala) {
-  // Substitua o número de telefone com o número para o qual você deseja enviar a mensagem no WhatsApp
-  const numeroWhatsapp = "5561982481039";
-  
-  const mensagem = `*Nova Solicitação*
-  
-  *Nome:* ${nome}
-  *E-mail:* ${email}
-  *Cor 1:* ${cor1}
-  *Cor 2:* ${cor2}
-  *Mensagem:* ${descricaoMandala}`;
-  
-  // Use a API do WhatsApp ou um serviço de terceiros para enviar a mensagem
-  // Neste exemplo, usamos a sintaxe "https://wa.me/numero?text=mensagem" para redirecionar para o WhatsApp
-  window.location.href = `https://wa.me/${numeroWhatsapp}?text=${encodeURIComponent(mensagem)}`;
-}
 
 //FORMULÁRIO COMPRAR MANDALA
 
@@ -149,12 +95,12 @@ formularioComprar.addEventListener("submit", function(event) {
   
   // Adicione aqui o código para obter os valores dos outros campos do formulário, se houverem
   
-  enviarMensagemNoWhatsApp(nomeComprar, emailComprar, selecaoMandala);
+  enviarMensagemNoWhatsAppComprar(nomeComprar, emailComprar, selecaoMandala);
 });
 
-function enviarMensagemNoWhatsApp(nomeComprar, emailComprar, selecaoMandala) {
+function enviarMensagemNoWhatsAppComprar(nomeComprar, emailComprar, selecaoMandala) {
   // Substitua o número de telefone com o número para o qual você deseja enviar a mensagem no WhatsApp
-  const numeroWhatsapp1 = "5561982481039";
+  const numeroWhatsapp1 = "5583988448324";
   
   const mensagem1 = `*Nova Solicitação*
 
@@ -165,4 +111,59 @@ function enviarMensagemNoWhatsApp(nomeComprar, emailComprar, selecaoMandala) {
   // Use a API do WhatsApp ou um serviço de terceiros para enviar a mensagem
   // Neste exemplo, usamos a sintaxe "https://wa.me/numero?text=mensagem" para redirecionar para o WhatsApp
   window.location.href = `https://wa.me/${numeroWhatsapp1}?text=${encodeURIComponent(mensagem1)}`;
+}
+
+//FORMULÁRIO PERSONALIZAR
+
+// Captura o botão e o formulário sobreposto pelo ID
+const botaoMostrarFormulario = document.getElementById("personalizar");
+const formularioSobreposto = document.getElementById("formularioSobreposto");
+const botaoFecharFormulario = document.getElementById("fecharFormulario");
+const formulario = document.getElementById("meuFormulario");
+
+// Adiciona um evento de clique ao botão para mostrar o formulário com animação
+botaoMostrarFormulario.addEventListener("click", function() {
+  formularioSobreposto.style.display = "block";
+  setTimeout(function() {
+    formularioSobreposto.style.opacity = "1";
+  }, 10); // Aguarda 10 milissegundos para iniciar a transição de opacidade
+});
+
+// Adiciona um evento de clique ao botão "X" para fechar o formulário com animação
+botaoFecharFormulario.addEventListener("click", function() {
+  formularioSobreposto.style.opacity = "0";
+  setTimeout(function() {
+    formularioSobreposto.style.display = "none";
+  }, 300); // Aguarda 300 milissegundos (tempo da transição) para ocultar o formulário
+});
+
+// Adiciona um evento de envio ao formulário para enviar mensagem no WhatsApp
+formulario.addEventListener("submit", function(event) {
+  event.preventDefault(); // Impede o envio padrão do formulário
+  
+  const nome = document.getElementById("nome").value;
+  const email = document.getElementById("email").value;
+  const cor1 = document.getElementById("cor1").value;
+  const cor2 = document.getElementById("cor2").value;
+  const descricaoMandala = document.getElementById("mensagem").value;
+  // Adicione aqui o código para obter os valores dos outros campos do formulário, se houverem
+  
+  enviarMensagemNoWhatsApp(nome, email, cor1, cor2, descricaoMandala);
+});
+
+function enviarMensagemNoWhatsApp(nome, email, cor1, cor2, descricaoMandala) {
+  // Substitua o número de telefone com o número para o qual você deseja enviar a mensagem no WhatsApp
+  const numeroWhatsapp = "5583988448324";
+  
+  const mensagem = `*Nova Solicitação*
+  
+  *Nome:* ${nome}
+  *E-mail:* ${email}
+  *Cor 1:* ${cor1}
+  *Cor 2:* ${cor2}
+  *Mensagem:* ${descricaoMandala}`;
+  
+  // Use a API do WhatsApp ou um serviço de terceiros para enviar a mensagem
+  // Neste exemplo, usamos a sintaxe "https://wa.me/numero?text=mensagem" para redirecionar para o WhatsApp
+  window.location.href = `https://wa.me/${numeroWhatsapp}?text=${encodeURIComponent(mensagem)}`;
 }
