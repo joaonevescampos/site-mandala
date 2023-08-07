@@ -113,7 +113,7 @@ header h1{
 
 body{
     background-color: var(--fundo);
-    background-image: url("../imagens/mandalas/fundo-alternativo-opacidade20.jpg");
+    background-image: url("../imagens/mandalas/fundo-alternativo-opacidade30.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -181,6 +181,11 @@ body{
   cursor: pointer;
 }
 
+#formularioComprar button:hover {
+  background-color: #464646;
+  transition: 1s ease;
+ }
+
 /* Estilo do botão "X" */
 #fecharFormularioComprar {
   position: absolute;
@@ -223,6 +228,11 @@ body{
   cursor: pointer;
   z-index: 9998;
 }
+
+#personalizar:hover {
+  background-color: #464646;
+  transition: 1s ease;
+ }
 
 /* Estilo do formulário sobreposto */
 #formularioSobreposto {
@@ -267,6 +277,11 @@ body{
   border-radius: 2px;
   cursor: pointer;
 }
+
+#meuFormulario button:hover {
+  background-color: #464646;
+  transition: 1s ease;
+ }
 
 /* Estilo do botão "X" */
 #fecharFormulario {
