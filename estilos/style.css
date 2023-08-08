@@ -15,40 +15,38 @@
 
 body{
   background-color: var(--fundo);
-  background-image: url("../imagens/mandalas/fundo-alternativo-opacidade30.jpg");
+  background-image: url("../imagens/home/fundo/fundo-alternativo-opacidade30.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  /* background-position: left 15%; */
   font-family: 'Josefin Sans', sans-serif;
   color: white;
   
   
 }
 
-
 /* ============ HEADER ============= */
 
 header{
-    font-weight: 200;
-    text-transform: uppercase;
-    padding: 20px;
-    display: block;
-    align-items: center;
+  font-weight: 200;
+  text-transform: uppercase;
+  padding: 20px;
+  display: block;
+  align-items: center;
     
 }
 
 header nav{
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 header h1{
-    padding: 30px;
-    font-size: 25px;
-    letter-spacing: 6px;
-    font-weight: 400;
-    text-align: center;
-    line-height: 40px;
+  padding: 30px;
+  font-size: 25px;
+  letter-spacing: 6px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 40px;
 }
 
 /* ============ IDIOMA ============= */
@@ -69,63 +67,63 @@ header h1{
   padding: 5px;
   border: solid 1px#5c5c5c;
   font-weight: 300;
+  cursor: pointer;
 }
-
 
 /* ============ MENU ============= */
 
 .menu-toggle{
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
 }
 
 .menu-toggle:before, .menu-toggle:after{
-    content: "";
-    position: absolute;
-    background-color: #fff;
-    width: 30px;
-    height: 3px;
-    transition: 1s;
+  content: "";
+  position: absolute;
+  background-color: #fff;
+  width: 30px;
+  height: 3px;
+  transition: 1s;
 }
 
 .menu-toggle:before {
-    transform: translateY(10px);
-  }
+  transform: translateY(10px);
+}
   
-  .menu-toggle:after {
-    transform: translateY(25px);
-  }
+.menu-toggle:after {
+  transform: translateY(25px);
+}
   
-  .menu {
-    display: none;
-  }
-  
-  .menu.open {
-    display: block;
-  }
-  
-  .menu ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .menu li {
-    padding: 10px 0;
-    
-  }
-  
-  .menu a {
-    color: #fff;
-    text-decoration: none;
-  }
+.menu {
+  display: none;
+}
 
-  .menu a:hover{
-    font-weight: 400;
-  }
+.menu.open {
+  display: block;
+}
 
-  /* ============ MAIN ============= */
+.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  padding: 10px 0;
+  
+}
+
+.menu a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.menu a:hover{
+  font-weight: 400;
+}
+
+/* ============ MAIN ============= */
 
 main{
   margin: auto;
@@ -147,7 +145,6 @@ img{
 }
 
 /* ============ FORMULÁRIO COMPRAR ============= */
-
 
 /* Estilo do formulário sobreposto */
 #containerFormularioComprar {
@@ -224,7 +221,6 @@ img{
 #fecharFormularioComprar:hover {
   color: white;
 }
-
 
 /* ============ FORMULÁRIO PERSONALIZADO ============= */
 
@@ -354,7 +350,6 @@ img{
   margin: auto;
   transform: translate(-50%, -50%);
   cursor: pointer;
-
 }
 
 .image-container:hover .overlay {
@@ -384,15 +379,12 @@ img{
   color: #fff;
   border: solid 1px #a7a7a7;
   cursor: pointer;
- 
 }
 
 .image-container .overlay .button-comprar:hover {
  background-color: #464646;
  transition: 1s ease;
 }
-
-
 
 /* ============ FOOTER ============= */
 

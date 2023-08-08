@@ -15,7 +15,7 @@
 
 body{
     background-color: var(--fundo);
-    background-image: url("../imagens/mandalas/fundo-original-opacidade20.jpg");
+    background-image: url("../imagens/about/fundo-original-opacidade20.jpg");
     background-repeat: no-repeat;
     background-size: 200%;
     background-attachment: fixed;
@@ -52,75 +52,75 @@ header h1{
 
 .container-idioma{
     position: relative;
-  }
+}
   
-  #formulario-idioma{
+#formulario-idioma{
+position: absolute;
+left: 73%;
+}
+
+#iidioma{
+background-color: #1f1f1f;
+color: #fff;
+font-family: 'Josefin Sans', sans-serif;
+padding: 5px;
+border: solid 1px#5c5c5c;
+font-weight: 300;
+}
+
+
+/* ============ MENU ============= */
+
+.menu-toggle{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.menu-toggle:before, .menu-toggle:after{
+    content: "";
     position: absolute;
-    left: 73%;
-  }
-  
-  #iidioma{
-    background-color: #1f1f1f;
+    background-color: #fff;
+    width: 30px;
+    height: 3px;
+    transition: 1s;
+}
+
+.menu-toggle:before {
+    transform: translateY(10px);
+}
+
+.menu-toggle:after {
+    transform: translateY(25px);
+}
+
+.menu {
+    display: none;
+}
+
+.menu.open {
+    display: block;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    padding: 10px 0;
+}
+
+.menu a {
     color: #fff;
-    font-family: 'Josefin Sans', sans-serif;
-    padding: 5px;
-    border: solid 1px#5c5c5c;
-    font-weight: 300;
-  }
-  
-  
-  /* ============ MENU ============= */
-  
-  .menu-toggle{
-      width: 40px;
-      height: 40px;
-      cursor: pointer;
-  }
-  
-  .menu-toggle:before, .menu-toggle:after{
-      content: "";
-      position: absolute;
-      background-color: #fff;
-      width: 30px;
-      height: 3px;
-      transition: 1s;
-  }
-  
-  .menu-toggle:before {
-      transform: translateY(10px);
-    }
-    
-    .menu-toggle:after {
-      transform: translateY(25px);
-    }
-    
-    .menu {
-      display: none;
-    }
-    
-    .menu.open {
-      display: block;
-    }
-    
-    .menu ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-    }
-    
-    .menu li {
-      padding: 10px 0;
-    }
-    
-    .menu a {
-      color: #fff;
-      text-decoration: none;
-    }
-  
-    .menu a:hover{
-      font-weight: 400;
-    }
-  
+    text-decoration: none;
+}
+
+.menu a:hover{
+    font-weight: 400;
+}
+
 
 /* ============ MAIN ============= */
 
@@ -175,7 +175,6 @@ footer{
     p{
         padding-left: 20px;
     }
-
     
     #foto-perfil{
         width: 350px;
@@ -189,8 +188,7 @@ footer{
     }
     #formulario-idioma{
         left: 85%;
-      }
-
+    }
 }
 
 @media screen and (min-width: 1200px) and (max-width: 1600px) {
@@ -201,6 +199,7 @@ footer{
         width: 950px;
         margin: auto;
     }
+
     main{
         display: flex;
         align-self: center;
@@ -210,17 +209,13 @@ footer{
         padding: 40px;
     }
 
-
     #container-foto-perfil{
         width: 400px;
         margin-bottom: 100px;
     } 
 
-
     #foto-perfil{
         width: 400px;
-
-        
     }
 
     .container-descricao{
@@ -230,8 +225,7 @@ footer{
     
     #descricao-sobre{
         font-weight: 300;
-        width: 500px;
-        
+        width: 500px;   
     }
 
     #formulario-idioma{
@@ -252,10 +246,10 @@ footer{
         margin: auto;
         padding-bottom: 200px;
     }
+
     main{
         display: flex;
-        align-self: center;
-        
+        align-self: center;  
     }
 
     p{
@@ -267,12 +261,10 @@ footer{
         padding: 40px;
     }
 
-
     #container-foto-perfil{
         width: 500px;
         
     } 
-
 
     #foto-perfil{
         width: 500px;
@@ -286,12 +278,11 @@ footer{
     #descricao-sobre{
         font-weight: 300;
         width: 600px;
-        margin: auto;
-        
+        margin: auto;  
     }
 
     #formulario-idioma{
         left: 90%;
-      }
+    }
 }
 

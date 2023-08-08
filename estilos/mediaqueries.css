@@ -1,4 +1,3 @@
-
 /* Versão mini tablet */
 @media screen and (min-width:640px) and (max-width: 768px){
     .vitrine{
@@ -10,131 +9,112 @@
 /* Versão para tablet */
 
 @media screen and (min-width:768px) and (max-width: 992px) {
-header{
-    padding-right: 0;
-}
-header h1{
-    font-size: 30px;
-}
-img{
-    width: 230px;
-}
-#formulario-idioma{
-    position: absolute;
-    left: 80%;
+    header{
+        padding-right: 0;
+    }
+    header h1{
+        font-size: 30px;
+    }
+    img{
+        width: 230px;
+    }
+    #formulario-idioma{
+        position: absolute;
+        left: 80%;
+        }
+
+    .image-container {
+        width: 230px; 
     }
 
-.image-container {
-    /* display: inline-block; */
-    /* width: 100vw; */
-    width: 230px; 
-  }
-
-.vitrine{
-    max-width: 740px;
-}
-
-/* .linha{
-    margin: auto;
-    width: 731px;
-}  */
-  
-.image-container img {
-    display: inline-block;
-    height: 230px; 
-  }
-  
+    .vitrine{
+        max-width: 740px;
+    }
+    
+    .image-container img {
+        display: inline-block;
+        height: 230px; 
+    }
+    
   .image-container .overlay {
     width: 230px;
     height: 230px;
   }
 
-.image-container .overlay .text {
-    font-size: 14px;
-    font-family: 'Josefin Sans', sans-serif;
-    font-weight: 300;
-    margin: 5px;
-}
+    .image-container .overlay .text {
+        font-size: 14px;
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: 300;
+        margin: 5px;
+    }
 
 
-.overlay h1{
-    font-size: 16px;
-}
+    .overlay h1{
+        font-size: 16px;
+    }
 
-.overlay p{
-    margin: 5px;
-}
+    .overlay p{
+        margin: 5px;
+    }
 
-.image-container .overlay .button-comprar {
-    padding: 5px 10px;
-}
-
-
+    .image-container .overlay .button-comprar {
+        padding: 5px 10px;
+    }
 }
 
 /* Versão para computador */
 
 @media screen and (min-width: 992px) and (max-width: 1600px) {
 
-header{
-    padding: 40px;
-}
+    header{
+        padding: 40px;
+    }
 
-header h1{
-    font-size: 30px;
-}
-img{
-    width: 300px;
-    height: 300px;
-}
-#formulario-idioma{
-    position: absolute;
-    left: 90%;
-}
+    header h1{
+        font-size: 30px;
+    }
+    img{
+        width: 300px;
+        height: 300px;
+    }
+    #formulario-idioma{
+        position: absolute;
+        left: 90%;
+    }
 
-.image-container {
-    /* display: inline-block; */
+    .image-container {
+        width: 300px; 
+    }
 
-    width: 300px; 
-}
+    .vitrine{
+        max-width: 940px;
+    }
 
-.vitrine{
-    max-width: 940px;
-}
+    .image-container img {
+        height: 300px; 
+    }
 
-/* .linha{
-    margin: auto;
-    width: 941px;
-} */
+    .image-container .overlay {
+        width: 300px;
+        height: 300px;
 
-.image-container img {
-    /* display: inline-block; */
-    height: 300px; 
-}
+    }
 
-.image-container .overlay {
-    width: 300px;
-    height: 300px;
+    .image-container .overlay .text {
+        font-size: 16px;
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: 300;
+        margin: 10px;
+    }
 
-}
+    .overlay p{
+        margin: 10px;
+    }
 
-.image-container .overlay .text {
-    font-size: 16px;
-    font-family: 'Josefin Sans', sans-serif;
-    font-weight: 300;
-    margin: 10px;
-}
-
-
-.overlay p{
-    margin: 10px;
-}
-
-.image-container .overlay .button-comprar {
-    padding: 10px 20px;
-
-}
-    
+    .image-container .overlay .button-comprar {
+        padding: 10px 20px;
+    }
+        
 }
 
 /* Versão para TV */
@@ -166,6 +146,7 @@ img{
         width: 490px;
     
     }
+
     #formulario-idioma{
         position: absolute;
         left: 95%;
@@ -181,15 +162,7 @@ img{
         max-width: 1519px;
     }
     
-    /* .linha{
-        margin: auto;
-        width: 1521px;
-    } */
-
-   
-    
     .image-container img {
-        /* display: inline-block; */
         height: 490px; 
     }
     

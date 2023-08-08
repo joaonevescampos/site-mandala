@@ -5,7 +5,9 @@
     --fundo: #1f1f1f
    
 }
+
 /* ============ GLOBAL ============= */
+
 *{
     margin: 0;
     padding: 0;
@@ -39,80 +41,80 @@ header h1{
 
 .container-idioma{
     position: relative;
-  }
+}
   
-  #formulario-idioma{
+#formulario-idioma{
+  position: absolute;
+  left: 73%;
+}
+
+#iidioma{
+  background-color: #1f1f1f;
+  color: #fff;
+  font-family: 'Josefin Sans', sans-serif;
+  padding: 5px;
+  border: solid 1px#5c5c5c;
+  font-weight: 300;
+}
+
+
+/* ============ MENU ============= */
+
+.menu-toggle{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.menu-toggle:before, .menu-toggle:after{
+    content: "";
     position: absolute;
-    left: 73%;
-  }
+    background-color: #fff;
+    width: 30px;
+    height: 3px;
+    transition: 1s;
+}
   
-  #iidioma{
-    background-color: #1f1f1f;
-    color: #fff;
-    font-family: 'Josefin Sans', sans-serif;
-    padding: 5px;
-    border: solid 1px#5c5c5c;
-    font-weight: 300;
-  }
-  
-  
-  /* ============ MENU ============= */
-  
-  .menu-toggle{
-      width: 40px;
-      height: 40px;
-      cursor: pointer;
-  }
-  
-  .menu-toggle:before, .menu-toggle:after{
-      content: "";
-      position: absolute;
-      background-color: #fff;
-      width: 30px;
-      height: 3px;
-      transition: 1s;
-  }
-  
-  .menu-toggle:before {
-      transform: translateY(10px);
-    }
-    
-    .menu-toggle:after {
-      transform: translateY(25px);
-    }
-    
-    .menu {
-      display: none;
-    }
-    
-    .menu.open {
-      display: block;
-    }
-    
-    .menu ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-    }
-    
-    .menu li {
-      padding: 10px 0;
-    }
-    
-    .menu a {
-      color: #fff;
-      text-decoration: none;
-    }
-  
-    .menu a:hover{
-      font-weight: 400;
-    }
-  
+.menu-toggle:before {
+  transform: translateY(10px);
+}
+
+.menu-toggle:after {
+  transform: translateY(25px);
+}
+
+.menu {
+  display: none;
+}
+
+.menu.open {
+  display: block;
+}
+
+.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  padding: 10px 0;
+}
+
+.menu a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.menu a:hover{
+  font-weight: 400;
+}
+
 /* ============ BODY ============= */
 
 body{
     background-color: var(--fundo);
-    background-image: url("../imagens/mandalas/fundo-original-opacidade20.jpg");
+    background-image: url("../imagens/mandala/fundo-original-opacidade20.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
     background-attachment: fixed;
@@ -125,7 +127,7 @@ body{
 /* ============ MAIN ============= */
 
 .container-descricao{
-    margin: 30px;
+  margin: 30px;
 }
 #descricao-mandala{
     margin: auto;
@@ -182,31 +184,28 @@ footer{
 
 @media screen and (min-width: 1200px){
 
-    header{
-        padding: 40px;
-    }
+  header{
+      padding: 40px;
+  }
 
-    #formulario-idioma{
-        left: 90%;
-      }
+  #formulario-idioma{
+      left: 90%;
+  }
 
-      #descricao-mandala{
-        max-width: 800px;
-    }
+    #descricao-mandala{
+      max-width: 800px;
+  }
 
-    .container-cenas{
-      width: 800px;
-      display: flex;
-      align-self: center;
-    }
-    
-    .cena{
-      margin: 10px;
-    }
-    .cena img{
-      width: 250px;
-    }
+  .container-cenas{
+    width: 800px;
+    display: flex;
+    align-self: center;
+  }
+  
+  .cena{
+    margin: 10px;
+  }
+  .cena img{
+    width: 250px;
+  }
 }
-
-
-
