@@ -1,4 +1,12 @@
 
+/* Versão mini tablet */
+@media screen and (min-width:640px) and (max-width: 768px){
+    .vitrine{
+        max-width: 620px;
+    }
+
+}
+
 /* Versão para tablet */
 
 @media screen and (min-width:768px) and (max-width: 992px) {
@@ -17,19 +25,19 @@ img{
     }
 
 .image-container {
-    display: inline-block;
-    width: 100vw;
+    /* display: inline-block; */
+    /* width: 100vw; */
     width: 230px; 
   }
 
 .vitrine{
-    margin: auto; 
+    max-width: 740px;
 }
 
-.linha{
+/* .linha{
     margin: auto;
     width: 731px;
-}
+}  */
   
 .image-container img {
     display: inline-block;
@@ -85,22 +93,22 @@ img{
 }
 
 .image-container {
-    display: inline-block;
+    /* display: inline-block; */
 
     width: 300px; 
 }
 
 .vitrine{
-    margin: auto; 
+    max-width: 940px;
 }
 
-.linha{
+/* .linha{
     margin: auto;
     width: 941px;
-}
+} */
 
 .image-container img {
-    display: inline-block;
+    /* display: inline-block; */
     height: 300px; 
 }
 
@@ -170,17 +178,18 @@ img{
     
     .vitrine{
         margin: auto; 
+        max-width: 1519px;
     }
     
-    .linha{
+    /* .linha{
         margin: auto;
         width: 1521px;
-    }
+    } */
 
    
     
     .image-container img {
-        display: inline-block;
+        /* display: inline-block; */
         height: 490px; 
     }
     

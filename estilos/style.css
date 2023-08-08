@@ -11,6 +11,22 @@
     padding: 0;
 }
 
+/* ============ BODY ============= */
+
+body{
+  background-color: var(--fundo);
+  background-image: url("../imagens/mandalas/fundo-alternativo-opacidade30.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  /* background-position: left 15%; */
+  font-family: 'Josefin Sans', sans-serif;
+  color: white;
+  
+  
+}
+
+
 /* ============ HEADER ============= */
 
 header{
@@ -109,19 +125,25 @@ header h1{
     font-weight: 400;
   }
 
-/* ============ BODY ============= */
+  /* ============ MAIN ============= */
 
-body{
-    background-color: var(--fundo);
-    background-image: url("../imagens/mandalas/fundo-alternativo-opacidade30.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    /* background-position: left 15%; */
-    font-family: 'Josefin Sans', sans-serif;
-    color: white;
-    
-    
+main{
+  margin: auto;
+}
+
+img{
+  box-shadow: 2px 2px 5px #0000009a;
+  display: inline-block;
+  width: 300px;
+} 
+
+.vitrine{
+  display: flex;
+  direction: row;
+  max-width: 700px;
+  margin: auto;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 /* ============ FORMULÁRIO COMPRAR ============= */
@@ -300,59 +322,6 @@ body{
   color: white;
 }
 
-
-/* ============ MAIN ============= */
-
-main{
-    margin: auto;
-}
-
-
-
-img{
-    box-shadow: 2px 2px 5px #0000009a;
-    display: inline-block;
-    width: 300px;
-} 
-
-
-/* .imagem-ampliada {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.493);
-  z-index: 9999;
-  display: flex;
-  align-items: center;
-  justify-content:center;
-  transition: 1s;
-}
-
-.entrar-imagem{
-  transition: 1s ease;
-}
-
-.imagem-escura {
-  position: relative;
-  display: inline-block;
-}
-
-.imagem-escura:hover::before{
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0);
-  opacity: 0.3; 
-  margin: 0;
-  padding: 0;
-  
-} */
-
 /* OVERLAY SOB AS MANDALAS */
 .image-container {
   position: relative;
@@ -400,6 +369,8 @@ img{
 }
 
 .overlay h1{
+  font-size: 22px;
+  font-family: 'Josefin Sans', sans-serif;
   margin-top: 10px;
 }
 .overlay p{

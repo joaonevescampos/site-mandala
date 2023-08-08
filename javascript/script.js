@@ -1,3 +1,55 @@
+//Mandalas
+function gerarMandalas(a, b){
+  vitrineEl = document.querySelector('.vitrine')
+
+for(let i = a; i <= b; i++){
+  let imageContainerEl = document.createElement('div')
+  imageContainerEl.classList.add('image-container')
+  vitrineEl.appendChild(imageContainerEl)
+  imgEl = document.createElement('img')
+  if(i < 10){
+  imgEl.setAttribute('src', `imagens/mandalas/original/0${i}.jpg`)
+}else{
+  imgEl.setAttribute('src', `imagens/mandalas/original/${i}.jpg`)
+}
+  imageContainerEl.appendChild(imgEl) 
+
+  overlayEl = document.createElement('overlay')
+  overlayEl.classList.add('overlay')
+  imageContainerEl.appendChild(overlayEl)
+ 
+  h1El = document.createElement('h1')
+  h1El.classList.add('mandala')
+  h1El.innerHTML = `Mandala 00${i}`
+  overlayEl.appendChild(h1El)
+
+  textEl = document.createElement('div')
+  textEl.classList.add('text')
+  overlayEl.appendChild(textEl)
+
+
+  textEl.innerHTML = ` 
+  <p class="tecnica" data-traducao="tecnica">Técnica: Pintura digital</p>
+  <p class="dimensoes" data-traducao="dimensoes">Dimensões recomendadas: 50 x 50cm</p>
+  <p class="formato" data-traducao="formato">Formato: JPEG/ TIFF</p>
+  <p class="valor" data-traducao="valor">Valor: R$50,00</p>`
+
+  spanEl = document.createElement('span')
+  spanEl.innerHTML = `
+  <button class="button-comprar" data-traducao="comprar">Comprar</button>`
+  overlayEl.appendChild(spanEl)
+  }
+
+}
+
+gerarMandalas(1, 10)
+gerarMandalas(13, 55)
+gerarMandalas(67, 83)
+gerarMandalas(85, 86)
+
+
+//Menu
+
 document.querySelector(".menu-toggle").addEventListener("click", function() { document.querySelector(".menu").classList.toggle("open");
 });
 
@@ -100,6 +152,23 @@ const formularioComprar = document.getElementById("formularioComprar");
 // Adiciona um evento de clique ao botão para mostrar o formulário com animação
 botaoFormularioComprar.forEach(function(botaoComprar) {
     botaoComprar.addEventListener("click", function() {
+      for(let i = 1; i <= 86; i++){
+        const inputSelectEl = document.querySelector('#selecao-mandala')
+        let opcaoEl = document.createElement('option')
+        if(i < 10){
+          opcaoEl.text = `Mandala 00${i}`
+          inputSelectEl.appendChild(opcaoEl)
+
+        }else if(i == 11 || i == 12 || (i >= 56 && i <= 66)){
+          i++
+        }
+        else{
+          opcaoEl.text = `Mandala 0${i}`
+          inputSelectEl.appendChild(opcaoEl)
+        }
+        
+        
+      }
         formularioContainer.style.display = "block";
         setTimeout(function() {
           formularioContainer.style.opacity = "1";
